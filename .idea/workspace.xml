@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbe76cf-3ace-42a0-a019-6d64a7f1ae49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitigonre" afterPath="$PROJECT_DIR$/.gitigonre" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/views.py" afterPath="$PROJECT_DIR$/book/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/urls.py" afterPath="$PROJECT_DIR$/demo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/book/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/book/templates/book-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/templates/author.html" afterPath="$PROJECT_DIR$/book/templates/author.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/templates/authors.html" afterPath="$PROJECT_DIR$/book/templates/authors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/templates/book.html" afterPath="$PROJECT_DIR$/book/templates/book.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/templates/list.html" afterPath="$PROJECT_DIR$/book/templates/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/settings.py" afterPath="$PROJECT_DIR$/demo/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +39,8 @@
       <file leaf-file-name="book.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/book/templates/book.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,8 +55,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitigonre" />
-        <option value="$PROJECT_DIR$/book/templates/author.html" />
         <option value="$PROJECT_DIR$/book/views.py" />
+        <option value="$PROJECT_DIR$/demo/settings.py" />
+        <option value="$PROJECT_DIR$/book/templates/base.html" />
+        <option value="$PROJECT_DIR$/book/templates/authors.html" />
+        <option value="$PROJECT_DIR$/book/templates/list.html" />
+        <option value="$PROJECT_DIR$/book/templates/book-detail.html" />
+        <option value="$PROJECT_DIR$/book/templates/author.html" />
         <option value="$PROJECT_DIR$/book/templates/book.html" />
       </list>
     </option>
@@ -151,6 +161,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="SearchEverywhereHistoryKey" value="book&#9;FILE&#9;file://F:/repo/demo/book/templates/book.html&#10;list&#9;FILE&#9;file://F:/repo/demo/book/templates/list.html&#10;sett&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -446,13 +457,8 @@
         <state relative-caret-position="306">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
           </folding>
         </state>
       </provider>
@@ -478,13 +484,8 @@
         <state relative-caret-position="306">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
           </folding>
         </state>
       </provider>
@@ -510,13 +511,8 @@
         <state relative-caret-position="190">
           <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
           </folding>
         </state>
       </provider>
@@ -542,13 +538,8 @@
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
           </folding>
         </state>
       </provider>
@@ -574,13 +565,8 @@
         <state relative-caret-position="380">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
           </folding>
         </state>
       </provider>
@@ -612,35 +598,6 @@
         <state relative-caret-position="1666">
           <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/templates/authors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495986823825" expanded="true" signature="31:340" ph="..." />
-            <marker date="1495986823825" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495986823825" expanded="true" signature="243:331" ph="..." />
-            <marker date="1495986823825" expanded="true" signature="249:324" ph="{% for author in authors... %}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book/templates/author.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1495993338693" expanded="true" signature="31:717" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="39:235" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="243:708" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="271:701" ph="{% for book in author.books.all ... %}" />
-            <marker date="1495993338693" expanded="true" signature="314:684" ph="{% if book.review ... %}" />
-            <marker date="1495993338693" expanded="true" signature="360:663" ph="..." />
-            <marker date="1495993338693" expanded="true" signature="443:568" ph="{% if book.is_favourite ... %}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,10 +634,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding>
+            <marker date="1495994433302" expanded="true" signature="0:306" ph="&quot;&quot;&quot;Django settings for demo project....&quot;&quot;&quot;" />
+            <marker date="1495994433302" expanded="true" signature="464:667" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="880:1130" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="1147:1598" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="1642:2150" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="1648:2147" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="1824:2140" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="1860:2129" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2198:2273" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2288:2414" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2305:2412" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2418:2519" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2549:2943" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2555:2652" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2660:2747" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2755:2843" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2851:2940" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="2947:3023" ph="..." />
+            <marker date="1495994433302" expanded="true" signature="3119:3220" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1495994672626" expanded="true" signature="31:959" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="38:300" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="92:206" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="307:951" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="335:943" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="352:755" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="386:737" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="404:719" ph="{% if request.user.is_authenticated ... %}" />
+            <marker date="1495994672626" expanded="true" signature="465:622" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="770:846" ph="..." />
+            <marker date="1495994672626" expanded="true" signature="784:831" ph="{% block content ... %}" />
+            <marker date="1495994672626" expanded="true" signature="863:932" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1495995026240" expanded="true" signature="46:404" ph="{% block content ... %}" />
+            <marker date="1495995026240" expanded="true" signature="77:168" ph="..." />
+            <marker date="1495995026240" expanded="true" signature="178:389" ph="{% for book in books ... %}" />
+            <marker date="1495995026240" expanded="true" signature="271:358" ph="{% if book.is_favourite ... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/templates/authors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1495994973544" expanded="true" signature="26:140" ph="{% block content ... %}" />
+            <marker date="1495994973544" expanded="true" signature="50:125" ph="{% for author in authors... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/templates/book-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495995166809" expanded="true" signature="0:322" ph="{% if book.review ... %}" />
+            <marker date="1495995166809" expanded="true" signature="42:309" ph="..." />
+            <marker date="1495995166809" expanded="true" signature="113:230" ph="{% if book.is_favourite ... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book/templates/author.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1495995182192" expanded="true" signature="26:188" ph="{% block content ... %}" />
+            <marker date="1495995182192" expanded="true" signature="81:173" ph="{% for book in author.books.all ... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/book/templates/book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

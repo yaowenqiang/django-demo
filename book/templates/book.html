@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A Book</title>
-</head>
-
-<body>
-    {% if book.review %}
-    <div class="book">
-        <h3>{{ book.title }}</h3>
-        <p>
-            By {% for author in book.authors.all %} {{ author.name }} {% endfor %}
-            {% if book.is_favourite %}
-                <p class="highlight">favourite</p>
-            {% endif %}
-            <p>{{ book.review|linebreaks }}</p>
-        </p>
-    </div>
-    {% endif %}
-</body>
-
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'book-detail.html' %}
+{% endblock %}
