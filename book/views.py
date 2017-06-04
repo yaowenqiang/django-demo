@@ -2,7 +2,7 @@ from django.db.models import Count
 from .models import Author,Book
 from .forms import Reviewform
 from django.views.generic import DetailView, View
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404,redirect
 # Create your views here.
 
 
@@ -64,7 +64,15 @@ def review_book(request, pk):
     Review an individual book
     """
     book = get_object_or_404(Book, pk=pk)
-    form = Reviewform
+    if request.method == 'POST':
+        form = Reviewform(request.POST)
+        if form.is_valid():
+            book.is_favourite = form.cleaned_data['is_favourite'];
+            book.review = form.cleaned_data['review'];
+            book.save()
+            return redirect('review-books')
+    else:
+        form = Reviewform
 
     context = {
         'book': book,
