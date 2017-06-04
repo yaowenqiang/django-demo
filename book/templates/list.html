@@ -5,7 +5,11 @@
             {{ books.count|apnumber|title }} book{{ books.count|pluralize }}
         </h1>
         {% for book in books %}
-        <h2>{{ book.title }} by {{ book.list_authors}} </h2>
+        <h2>
+            <a href="{% url 'book-detail' book.pk %}">
+                {{ book.title }} by {{ book.list_authors}}
+            </a>
+        </h2>
         {% if book.is_favourite %}
         <span class="highlight">favourite</span> {% endif %} {{ book.review }} {% endfor %}
 {% endblock %}

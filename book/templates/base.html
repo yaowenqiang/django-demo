@@ -1,33 +1,43 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}"">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"">
+    <title>ReadIt!</title>
 </head>
+
 <body>
     <div class="container">
         <header>
+            <img src="{% static 'img/logo.png' %}" alt="ReadIt!" class="logo">
             <div class="welcome">
+
                 {% if request.user.is_authenticated %}
-                    <p>
-                        Hello {{ request.user.username|title }}, you last logged in at {{ request.user.last_login|date:"D d M Y" }}
-                    </p>
+                <p>
+                    Hello {{ request.user.username|title }}, you last logged in at {{ request.user.last_login|date:"D d M Y" }}
+                </p>
                 {% else %}
-                    <p>Welcome guest</p>
+                <p>Welcome guest</p>
                 {% endif %}
             </div>
         </header>
+        <nav>
+            <a href="{% url 'books' %}">Books</a>
+            <a href="{% url 'authors' %}">Authors</a>
+        </nav>
         <main>
-            {% block content %}
-
-            {% endblock %}
+            {% block content %} {% endblock %}
         </main>
         <footer>
             <p>My Awesome book review Website!</p>
         </footer>
     </div>
 </body>
+
 </html>
