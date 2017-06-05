@@ -1,4 +1,5 @@
 from django import forms
+from .models import Book
 
 class Reviewform(forms.Form):
     """
@@ -19,3 +20,9 @@ class Reviewform(forms.Form):
             'min_length': 'Please write at least 3000 characters,(you have written %(show_value)s%)  '
         }
     )
+
+
+class BookForm(forms.ModelForm):
+    class Meta:
+        model = Book
+        fields = ['title','authors']
