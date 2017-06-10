@@ -1,3 +1,4 @@
+from pprint import pprint
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse
 from django.db.models import Count
@@ -104,10 +105,9 @@ class ReviewList(View):
         if form.is_valid():
             form.save()
             return redirect('review-books')
-
         context = {
             'books': books,
-            'form': BookForm,
+            'form': form,
         }
 
         return render(request, "list-to-review.html", context)
