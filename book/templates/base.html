@@ -20,10 +20,10 @@
 
                 {% if request.user.is_authenticated %}
                 <p>
-                    Hello {{ request.user.username|title }}, you last logged in at {{ request.user.last_login|date:"D d M Y" }}
+                    Hello {{ request.user.username|title }}, you last logged in at {{ request.user.last_login|date:"D d M Y" }}.<a href="{% url 'logout' %}">Logout</a>
                 </p>
                 {% else %}
-                <p>Welcome guest</p>
+                <p>Welcome guest!<a href="{% url 'login' %}">login</a></p>
                 {% endif %}
             </div>
         </header>

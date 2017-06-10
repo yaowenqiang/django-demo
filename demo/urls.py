@@ -18,8 +18,14 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from book.views import AuthorList,BookDetail,AuthorDetail,list_books,review_book,add_author,ReviewList,CreateAuthor
 from django.conf import settings
+from django.contrib.auth import views as auth_views
 urlpatterns = [
+    #Auth
+    url(r'^logout/$', auth_views.logout,{'next_page': 'books'},name="logout"),
+    url(r'^login/$', auth_views.login,{'template_name': 'login.html'},name="login"),
+    #Admin
     url(r'^admin/', admin.site.urls),
+    #Custome
     url(r'^$', list_books,name="books"),
     # url(r'^books/$', BookList.as_view()),
     url(r'^authors/$', AuthorList.as_view(),name="authors"),
