@@ -182,5 +182,6 @@ ENV/
 *.swf
 *.vob
 *.wmv
-
+.idea/
+books/__pycache__/
 # End of https://www.gitignore.io/api/video,django,python,pycharm

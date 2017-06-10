@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbe76cf-3ace-42a0-a019-6d64a7f1ae49" name="Default" comment="k">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book/templates/base.html" afterPath="$PROJECT_DIR$/book/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/urls.py" afterPath="$PROJECT_DIR$/demo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitigonre" afterPath="$PROJECT_DIR$/.gitigonre" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,14 +31,12 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/demo/urls.py">
+          <file leaf-file-name=".gitigonre" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitigonre">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-                  <folding>
-                    <element signature="e#638#695#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="155">
+                  <caret line="183" column="4" lean-forward="false" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -49,12 +45,14 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/book/templates/base.html">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/demo/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-                  <folding />
+                <state relative-caret-position="408">
+                  <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+                  <folding>
+                    <element signature="e#638#695#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -69,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitigonre" />
         <option value="$PROJECT_DIR$/book/templates/book.html" />
         <option value="$PROJECT_DIR$/demo/settings.py" />
         <option value="$PROJECT_DIR$/book/templates/list.html" />
@@ -88,6 +85,7 @@
         <option value="$PROJECT_DIR$/demo/urls.py" />
         <option value="$PROJECT_DIR$/book/templates/login.html" />
         <option value="$PROJECT_DIR$/book/templates/base.html" />
+        <option value="$PROJECT_DIR$/.gitigonre" />
       </list>
     </option>
   </component>
@@ -708,13 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitigonre">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1375,16 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="e#638#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1400,8 +1381,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/book/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="374">
           <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <marker date="1497103628513" expanded="true" signature="49:1651" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="57:590" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="598:1642" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="626:1634" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="643:1188" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="756:1170" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="775:1152" ph="{% if request.user.is_authenticated ... %}" />
+            <marker date="1497103628513" expanded="true" signature="832:1021" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="1202:1459" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="1320:1445" ph="{% if request.user.is_authenticated ... %}" />
+            <marker date="1497103628513" expanded="true" signature="1474:1537" ph="..." />
+            <marker date="1497103628513" expanded="true" signature="1488:1522" ph="{% block content ... %}" />
+            <marker date="1497103628513" expanded="true" signature="1554:1623" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+          <folding>
+            <element signature="e#638#695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitigonre">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="183" column="4" lean-forward="false" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
           <folding />
         </state>
       </provider>
