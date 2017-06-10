@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.contrib.auth.decorators import login_required
 from django.conf.urls import include, url
 from django.contrib import admin
 from book.views import AuthorList,BookDetail,AuthorDetail,list_books,review_book,add_author,ReviewList,CreateAuthor
@@ -23,9 +24,9 @@ urlpatterns = [
     # url(r'^books/$', BookList.as_view()),
     url(r'^authors/$', AuthorList.as_view(),name="authors"),
     url(r'^books/(?P<pk>|[-\w]+)/$', BookDetail.as_view(),name="book-detail"),
-    url(r'^authors/add/$', CreateAuthor.as_view(),name='add-author'),
+    url(r'^authors/add/$', login_required(CreateAuthor.as_view()),name='add-author'),
     url(r'^authors/(?P<pk>|[-\w]+)/$', AuthorDetail.as_view(),name='author-detail'),
-    url(r'^review/$', ReviewList.as_view(), name='review-books'),
+    url(r'^review/$', login_required(ReviewList.as_view()), name='review-books'),
     url(r'^review/(?P<pk>[-\w]+)/$', review_book, name='review-book'),
     # url(r'^authors/add/$', add_author, name='add-author'),
 

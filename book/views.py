@@ -1,4 +1,4 @@
-from pprint import pprint
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.core.urlresolvers import reverse
 from django.db.models import Count
@@ -50,6 +50,7 @@ class AuthorDetail(DetailView):
 
 
 # Paste into Views.py - don't forget to import get_object_or_404!
+@login_required
 def review_books(request):
     """
     List all of the books that we want to review.
