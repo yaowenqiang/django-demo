@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from book.views import AuthorList,BookDetail,AuthorDetail,list_books,review_book,add_author,ReviewList
+from book.views import AuthorList,BookDetail,AuthorDetail,list_books,review_book,add_author,ReviewList,CreateAuthor
 from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,10 +23,11 @@ urlpatterns = [
     # url(r'^books/$', BookList.as_view()),
     url(r'^authors/$', AuthorList.as_view(),name="authors"),
     url(r'^books/(?P<pk>|[-\w]+)/$', BookDetail.as_view(),name="book-detail"),
+    url(r'^authors/add/$', CreateAuthor.as_view(),name='add-author'),
     url(r'^authors/(?P<pk>|[-\w]+)/$', AuthorDetail.as_view(),name='author-detail'),
     url(r'^review/$', ReviewList.as_view(), name='review-books'),
     url(r'^review/(?P<pk>[-\w]+)/$', review_book, name='review-book'),
-    url(r'^add-author/$', add_author, name='add-author'),
+    # url(r'^authors/add/$', add_author, name='add-author'),
 
 ]
 
